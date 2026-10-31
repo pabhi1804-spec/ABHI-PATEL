@@ -1,1 +1,7 @@
-streamlit>=1.36,<2.0
+opencv-python
+pillow
+numpy
+matplotlib
+scikit-image
+scikit-learn
+jupyter
