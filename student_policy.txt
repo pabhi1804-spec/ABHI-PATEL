@@ -1,0 +1,20 @@
+STUDENT FEE PAYMENT
+Students can check their fee status through the student support office or the official student portal. The student record shows the current payment status and any outstanding amount. If the payment portal fails, students should retain the transaction/error reference and contact the accounts office for assistance.
+
+PAYMENT DEADLINE AND PORTAL FAILURE
+The supplied policy does not grant an automatic extension when the payment portal fails. Students should contact the accounts office with the error reference and request guidance. Do not assume that payment on the next working day is automatically permitted.
+
+SCHOLARSHIPS
+Scholarship eligibility and award status are subject to verification by the institution. A status marked “verification pending” means the application is not yet finally approved. Students should contact the scholarship/financial-aid office for document or status queries.
+
+COURSE CHANGE
+A course or programme change is a sensitive student-record action. A request must be reviewed and approved by an authorized administrator before the student record is updated. Submitting a request does not itself change the student's course.
+
+SUPPORT REQUESTS
+Students may submit a support request describing the issue. The support team should provide a reference number so the student can follow up. Students should not include passwords, OTPs, PINs or other login credentials in a support request.
+
+PRIVACY AND ACCESS
+A student may access their own private student information after signing in. A student must not view or modify another student's private record. Access decisions must be enforced by application/tool code and not only by instructions to an AI model.
+
+MEMORY AND SENSITIVE INFORMATION
+The agent may remember useful, non-sensitive preferences or programme context across sessions. OTPs, passwords, PINs, payment credentials and other temporary or sensitive information must not be stored as persistent memory.

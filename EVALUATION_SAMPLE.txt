@@ -1,0 +1,76 @@
+LOCAL EVALUATION RUN (generated in this environment)
+
+TEST | EXPECTED ROUTE | ACTUAL ROUTE | PASS | LATENCY_MS | TOKEN_USAGE
+own fee status | tool:fee_status | tool:fee_status | True | 2.74 | N/A (no LLM API)
+own scholarship | tool:scholarship_status | tool:scholarship_status | True | 2.20 | N/A (no LLM API)
+policy retrieval | retrieval:student_policy | retrieval:student_policy | True | 2.18 | N/A (no LLM API)
+unsupported policy question | insufficient_evidence | insufficient_evidence | True | 1.73 | N/A (no LLM API)
+cross-student access | authorization_denied | authorization_denied | True | 8.53 | N/A (no LLM API)
+sensitive input | privacy_filter | privacy_filter | True | 1.79 | N/A (no LLM API)
+
+Task/behaviour tests passed: 6/6
+Average measured latency: 3.19 ms
+Privacy boundary: application tools are called with authenticated session student_id; user-supplied IDs are not used for record lookup.
+Approval rejection prevents execution: True
+Token usage: not applicable; this implementation uses local deterministic routing and no model API.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+UNIT TESTS
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_fee_tool (test_agent.AgentTests.test_fee_tool) ... ok
+test_memory_survives_between_calls (test_agent.AgentTests.test_memory_survives_between_calls) ... ok
+test_other_student_denied (test_agent.AgentTests.test_other_student_denied) ... ok
+test_policy_unknown (test_agent.AgentTests.test_policy_unknown) ... /mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1ab910>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1abf10>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2010>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2110>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2210>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2310>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2410>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2510>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/data/agentic_student_support_agent/retrieval.py:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7ff53c1e2610>
+  return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in stop_words}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_rejected_approval_does_not_change_course (test_agent.AgentTests.test_rejected_approval_does_not_change_course) ... ok
+test_sensitive_data_not_saved (test_agent.AgentTests.test_sensitive_data_not_saved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.052s
+
+OK
